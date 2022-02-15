@@ -1,0 +1,945 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --orange:#ff6600;
+    --blue-grey:#44425a;
+    --box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: 62.5%;
+    text-decoration: none;
+    outline: none;
+    transition: all .2s linear;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 8rem;
+    overflow-x: hidden;
+}
+
+
+/* header section starts  */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 7%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: var(--box-shadow);
+    position: sticky;
+    background-color: white;
+}
+
+header a{
+    color:var(--blue-grey);
+}
+
+header .logo{
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+header .logo span{
+    font-size: 3.5rem;
+    color: var(--orange);
+}
+
+header #menu-bar{
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: .1rem solid rgba(0, 0, 0, .3);
+    padding: 1.2rem 1.2rem;
+    border-radius: .5rem;
+    display: none;
+}
+
+header .navbar a:hover{
+    color: var(--orange);
+}
+
+header .navbar a{
+    font-size: 1.7rem;
+    margin-left: 2rem;
+    font-weight: 500;
+}
+
+
+/* header section ends  */
+
+
+/* what page section starts */
+
+.what-page{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('../images/needanycourse.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 27rem;
+    color: white;
+}
+
+.what-page div{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 15%;
+    
+}
+
+.what-page div h1{
+    font-size: 6rem;
+    font-weight: 600;
+}
+
+.what-page div p{
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+
+/* what page section ends */
+
+
+/* home section starts  */
+
+.home{
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('../images/home.jpg');
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 2rem;
+}
+
+.home .container{
+    text-align: center;
+    width: 90rem;
+}
+
+.home .container h1{
+    font-size: 4rem;
+}
+
+.home .container p{
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.home .container input{
+    font-size: 1.5rem;
+    color: white;
+    border: .1rem solid rgba(0, 0, 0, .3);
+    border-radius: 1rem;
+    margin: 1rem;
+    padding: 1rem 2rem;
+}
+
+.home .container input:hover{
+    cursor: pointer;
+}
+
+.home .container #learn-more{
+    background-color: #15155f;
+
+}
+
+.home .container #visit-courses{
+    background-color: var(--orange);
+}
+
+/* home section ends  */
+
+
+/* about us section starts  */
+
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:4rem;
+    padding: 3rem 5%;
+    margin: 10rem 0;
+}
+
+.about .left{
+    width: 40rem; 
+    height: 40rem; 
+    
+}
+
+.about .left img{
+    width: 100%;
+    height: 100%;
+    border-radius: .5rem;
+}
+
+.about .right{
+    width: 50rem;
+}
+
+.about .right h2{
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--orange);
+    letter-spacing: .3rem;
+}
+
+.about .right h1{
+    font-size: 4rem;
+    color: var(--blue-grey);
+}
+
+.about .right p{
+    font-size: 1.5rem;
+}
+
+.about .right input{
+    background-color: var(--orange);
+    color: white;
+    border: .1rem solid var(--orange);
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    margin-top: 2rem;
+    border-radius: .5rem;
+}
+
+.about .right input:hover{
+    cursor: pointer;
+    background-color: white;
+    color: var(--orange);
+    border: .1rem solid var(--orange);
+}
+
+/* about us section ends  */
+
+
+/* internship section starts  */
+
+    /* internship about section starts  */
+
+.internship{
+    background-color: #f9fbfd;
+}    
+
+.internship .internship-about{
+    padding: 2rem 0;
+}
+
+.internship .internship-about .head{
+    text-align: center;
+    margin: 5rem 0;
+}
+
+.internship .internship-about h2{
+    font-size: 2rem;
+    color: var(--orange);
+}
+
+.internship .internship-about h1{
+    font-size: 4rem;
+    color: var(--blue-grey);
+}
+
+.internship .internship-about i{
+    margin-right: 1rem;
+}
+
+.internship .internship-about .why,.internship .internship-about .how{
+    margin-left: 12%;
+}
+
+.internship .internship-about .why ul li,.internship .internship-about .how ul li{
+    list-style: none;
+    font-size: 1.4rem;
+    font-weight: 300;
+    margin: 1.5rem;
+}
+
+    /* internship about section starts  */
+
+    /* internship available section starts  */
+
+.internship-available{
+    text-align: center;
+    padding: 4rem 10%;
+}
+
+.internship-available .head{
+    font-size: 6rem;
+    color: var(--blue-grey);
+}
+
+.internship-available .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+    margin: 4rem 0;
+}
+
+.internship-available .box-container .box{
+    flex:1 1 30rem;
+    background-color: white;
+    padding: 4rem 0;
+    border-radius: 1rem;
+    border: .1rem solid rgba(0, 0, 0, .1);
+}
+
+.internship-available .box-container .box:hover{
+    box-shadow: var(--box-shadow);
+    z-index: 100;
+}
+
+.internship-available .box-container .box i{
+    font-size: 7rem;
+    color: var(--blue-grey);
+}
+
+.internship-available .box-container .box h2{
+    font-size: 2rem;
+    font-weight: 300;
+    margin: 2rem 0;
+}
+
+.internship-available .box-container .box #enroll-btn{
+    background-color: white;
+    border: .1rem solid var(--orange);
+    color: var(--orange);
+    font-size: 1.5rem;
+    padding:1rem 2rem;
+    border-radius: 1rem;
+    margin: 1rem 0;
+}
+
+.internship-available .box-container .box #enroll-btn:hover{
+    cursor: pointer;
+    color: white;
+    background-color: var(--orange);
+}
+
+
+    /* internship available section ends  */
+
+/* internship section ends  */
+
+
+/* subject section starts  */
+
+.subject{
+    text-align: center;
+    padding: 4rem 12.5%;
+}
+
+.subject .head h2{
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--orange);
+    letter-spacing: .3rem;
+}
+
+.subject .head h1{
+    font-size: 4rem;
+    color: var(--blue-grey);
+}
+
+.subject .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+}
+
+
+.subject .box-container .box{
+    flex: 1 1 25rem;
+    
+    height: 15rem;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.subject .box-container .box:hover{
+    cursor: pointer;
+}
+
+.subject .box-container .box .info{
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.subject .box-container .box .info h3{
+    font-weight: 500;
+}
+
+/* subject section ends  */
+
+
+
+
+/* courses section starts  */
+
+.course{
+    padding: 3rem 14%;
+}
+
+.course .head{
+    text-align: center;
+}
+
+.course .head h2{
+    font-size: 2rem;
+    color: var(--orange);
+}
+
+.course .head h1{
+    font-size: 4rem;
+    color: var(--blue-grey);
+}
+
+.course .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:4rem;
+    margin: 2rem 0;
+}
+
+.course .box-container .box{
+    flex:1 1 25rem;
+    background-color: #f2f1f8;
+    border-radius: 1rem;
+    color: var(--blue-grey);
+    border: .1rem solid rgba(0,0,0,.1);
+}
+
+.course .box-container .box p{
+    font-size: 1.3rem;
+}
+
+.course .box-container .box p span,.course .box-container .box p i{
+    font-size: 1.3rem;
+    color: var(--orange);
+    margin-right: .5rem;
+}
+
+
+.course .box-container .box .image{
+    height: 25rem;
+    
+}
+
+.course .box-container .box .image img{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.course .box-container .box .count,.course .box-container .box .box-footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.course .box-container .box .box-footer{
+    border-top: .1rem solid rgba(0,0,0,.1);
+}
+
+.course .box-container .box .count,.course .box-container .box .box-footer,.course .box-container .box .course-title{
+    padding: .5rem 2rem;
+    margin: .5rem 0;
+}
+
+.course .box-container .box .count{
+    color: #6c6a74;
+}
+
+.course .box-container .box .course-title a{
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--blue-grey);
+}
+
+.course .box-container .box .course-title a:hover{
+    text-decoration: underline;
+}
+
+
+/* courses section ends  */
+
+
+
+/* review section starts  */
+
+.swiper {
+    width: 50rem;
+  }
+
+.review{
+      text-align: center;
+      margin: 5rem auto;
+  }
+
+.review .header h2{
+    font-size: 2rem;
+    color: var(--orange);
+  }
+
+.review .header h1{
+      font-size: 4rem;
+      color: var(--blue-grey);
+    }
+
+.review .wrapper{
+    margin: 4rem 0;
+}
+
+.review .wrapper .slide{
+    background-color: whitesmoke;
+    /* width: 45rem; */
+    border-radius: 1rem;
+    padding: 4rem 3rem;
+    text-align: justify;
+    color: var(--blue-grey);
+}
+
+.review .wrapper .slide .head img{
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+}
+
+.review .wrapper .slide .head {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+
+.review .wrapper .slide .head h2,.review .wrapper .slide .head p{
+    font-size: 1.5rem;
+}
+
+.review .wrapper .slide .head p{
+    color: var(--orange);
+}
+
+.review .wrapper .slide .content p{
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}
+
+.review .swiper-pagination-bullet-active{
+    background-color:var(--orange) ;
+}
+
+
+/* review section ends  */
+
+
+
+
+/* need any courses section starts */
+
+.need-any-course{
+    display: flex;
+    flex-wrap: wrap;
+    gap:2rem;
+    justify-content: center;
+    align-items: center;
+    padding: 6rem 10%;
+    color: white;
+    background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.3)),url('../images/needanycourse.jpg');
+    background-size: cover;
+    background-position: center;
+
+}
+    /* left section  */
+.need-any-course .left{
+        flex: 1 1 50rem;
+    }
+
+.need-any-course .left h2{
+    color: var(--orange);
+    font-size: 2rem;
+}
+
+.need-any-course .left h1{
+    font-size: 4rem;
+}
+
+.need-any-course .left p{
+    font-size: 2rem;
+}
+
+.need-any-course .left ul{
+    list-style: none;
+    font-size: 3rem;
+    margin-top: 2.5rem;
+}
+
+.need-any-course .left ul i{
+    color: var(--orange);
+    margin-right: 2rem;
+    font-size: 1.5rem;
+}
+
+
+    /* right section  */
+.need-any-course .right{
+    background-color: var(--orange);
+    font-size: 4rem;
+    text-align: center;
+    border-radius:.5rem;
+    flex: 1 1 20rem;
+}
+
+.need-any-course .right .head{
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+    padding: 2rem;
+}
+
+.need-any-course .right .head h1{
+    font-size: 3rem;
+}
+
+.need-any-course .right form{
+    padding: 3rem;
+}
+
+.need-any-course .right form input{
+    display: block;
+    width: 90%;
+    margin: 1.5rem;
+    padding: .5rem 2rem;
+    border-radius: .5rem;
+    border: .1rem solid rgba(0,0,0,0.1);
+}
+
+.need-any-course .right form select{
+    display: block;
+    width: 90%;
+    margin: 1.5rem;
+    padding: .5rem 2rem;
+    border-radius: .5rem;
+    border: .1rem solid rgba(0,0,0,0.1);
+}
+
+.need-any-course .right form select option{
+    font-size: 1.5rem;
+}
+
+.need-any-course .right .head{
+    background-color: white;
+    color: var(--blue-grey);
+}
+
+.need-any-course .right form #button{
+    background-color: var(--blue-grey);
+    color: white;
+}
+
+.need-any-course .right form #button:hover{
+    cursor: pointer;
+    background-color: #333244;
+}
+
+
+/* need any courses section ends */
+
+
+/* teacher section starts */
+
+.teacher{
+    text-align: center;
+    padding: 10rem 11%;
+}
+
+.teacher .head h2{
+    font-size: 2rem;
+    color: var(--orange);
+}
+
+.teacher .head h1{
+    font-size: 4rem;
+    color: var(--blue-grey);
+}
+
+.teacher .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+    margin-top: 2rem;
+}
+
+.teacher .box-container .box{
+    background-color: #f2f1f8;
+    flex:1 1 20rem;
+    border-radius: 1rem;
+}
+
+.teacher .box-container .box .image{
+    height: 25rem;
+    
+}
+
+.teacher .box-container .box .image img{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.teacher .box-container .box .info{
+    font-size: 2.5rem;
+    
+    padding: 2rem 0;
+}
+
+/* teacher section ends  */
+
+
+/* contact-us section starts  */
+
+.contact-us{
+    text-align: center;
+    padding: 4rem 9%;
+    margin: 10rem 0;
+}
+
+.contact-us .head h2{
+    font-size: 2rem;
+    color: var(--orange);
+}
+
+.contact-us .head h1{
+    font-size: 4rem;
+    color: var(--blue-grey);
+    margin-bottom: 2rem;
+}
+
+.contact-us .form-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-us .form-container form{
+    background-color: #f2f1f8;
+    padding: 2rem 4.5rem;
+    border-radius: 1rem;
+    width: 65rem;
+}
+
+.contact-us .form-container form input{ 
+    display: block;
+    width: 100%;
+    margin: 2rem 0;
+    font-size: 1.5rem;
+    padding: .5rem 2rem;
+    border-radius: .5rem;
+    border: .1rem solid rgba(0,0,0,.1);
+}
+
+.contact-us .form-container form textarea{
+    display: block;
+    width: 100%;
+    margin: 2rem 0;
+    font-size: 1.5rem;
+    padding: .5rem 2rem;
+    border-radius: .5rem;
+    border: .1rem solid rgba(0,0,0,.1);
+}
+
+.contact-us .form-container form #btn{
+    background-color:var(--orange);
+    color: white;
+    width: 15rem;
+    padding: 1rem 0;
+}
+
+
+.contact-us .form-container form #btn:hover{
+    background-color: white;
+    color: var(--orange);
+    border: .1rem solid var(--orange);
+    cursor: pointer;
+}
+
+
+/* contact-us section ends  */
+
+
+
+
+
+
+/* footer section starts  */
+
+footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem 9%;
+    background-color: var(--blue-grey);
+   
+}
+
+footer .head{
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: var(--orange);
+}
+
+footer .quick-links,footer .our-address,footer .newsletter{
+    flex: 1 1 30rem;
+}
+
+footer p{
+    font-size: 1.5rem;
+    margin: 1rem;
+    color: white;
+}
+
+footer span{
+    font-size: 2.5rem;
+    margin-right: 1.5rem;
+}
+
+
+footer .our-address .media-links a{
+    text-decoration: none;
+    background-color: var(--blue-grey);
+    font-size: 1.5rem;
+    padding: 1rem;
+    border-radius: .5rem;
+    color: white;
+    border: .1rem solid white;
+    margin-right: .5rem;
+}
+
+footer .our-address .media-links a:hover{
+    background-color: white;
+    color: var(--blue-grey);
+    cursor: pointer;
+}
+
+footer .quick-links p:hover{
+    cursor: pointer;
+    font-size: 1.6rem;
+    text-decoration: underline;
+}
+
+
+/* footer section ends  */
+
+/* copyright section starts  */
+.copyright{
+   text-align: center;
+   border-top:.1rem solid rgba(255,255,255,.1);
+   font-size: 1.5rem;
+   padding:1rem 0;
+   color: white;
+   background-color: var(--blue-grey);
+}
+
+.copyright span{
+   color: var(--orange);
+   font-size: 1.7rem;
+}
+
+/* copyright section ends  */
+
+
+
+
+
+/* media query  */
+
+@media (max-width:1200px){
+
+    section{
+       padding:3rem 5%;
+    }
+ 
+ }
+
+
+ @media (max-width:991px){
+
+    html{
+        font-size: 55%;
+    }
+    
+    section{
+        padding:3rem 2rem;
+    }
+
+}
+
+@media (max-width:845px){
+
+    header #menu-bar{
+        display: inline-block;
+        padding: 0 2rem;
+        transition: .2s linear;
+    }
+
+    header #menu-bar:hover{
+        background-color: var(--orange);
+        color: white;
+    }
+
+    header .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: white;
+        box-shadow: var(--box-shadow);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        border-bottom: .1rem solid rgba(0,0,0,0.1);
+    }
+
+    header .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    header .navbar a{
+        display: block;
+        margin: 1rem;
+        margin-left: 2rem;
+        font-weight: 600;
+    }
+
+}
+
+
+@media (max-width:450px){
+
+    html{
+       font-size: 50%;
+    }
+
+ }
+
